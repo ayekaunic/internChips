@@ -1,2 +1,2 @@
 # internChips
-A Python script scheduled to run every morning that checks if any internship applications expire that day and updates me and my friends about it via email.
+This script (scheduled to run every morning) fetches a list of email recipients(my batchmates) from a Google Spreadsheet, checks if any internship applictaions are expiring that day by scraping another Google Spreadsheet, and sends a reminder email to the recipients if any chips are due to expire today. If no chips are due, a different email is sent. The emails are sent using the smtplib and EmailMessage libraries.
